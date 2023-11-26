@@ -3,7 +3,7 @@
 MatrixPanel_I2S_DMA *dma_display = nullptr;
 
 extern "C" void app_main() {
-  HUB75_I2S_CFG mxconfig(/* width = */ 64, /* height = */ 64, /* chain = */ 1);
+  HUB75_I2S_CFG mxconfig(/* width = */ 64, /* height = */ 32, /* chain = */ 1);
 
   dma_display = new MatrixPanel_I2S_DMA(mxconfig);
   dma_display->begin();
